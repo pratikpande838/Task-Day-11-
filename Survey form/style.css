@@ -1,0 +1,75 @@
+.maindiv{
+    width:100%;
+    height:auto;
+    border:1px solid black;
+}
+
+*{
+    margin-left:5px;
+    margin-right:5px;
+}
+.maindiv form>label{
+    display:flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+/* #name-label{
+    margin:0px;
+} */
+sup{
+    color:red;
+}
+
+.maindiv p{
+    margin:0px;
+    font-size: small;
+}
+
+#purchase label{
+    margin-right:100px;
+}
+#service label{
+    margin-right:110px;
+}
+#company label{
+    margin-right:43px;
+}
+
+#buyagain label{
+    margin-right:40px;
+}
+#recommendProducts label{
+    margin-right:19px;
+}
+#recommendcompany label{
+    margin-right:19px;
+}
+
+.enquiry input{
+    margin:0px 50px;
+}
+
+.tab div:nth-child(2n+1){
+    background-color: lightgrey;
+    border-radius:2px;
+}
+
+
+button{
+    margin:5px 5px;
+}
+
+.horizontalLabels{
+    margin-left:180px;
+}
+#horizontalLabels_1>span{
+    margin-left:0px;
+    margin-right:55px;
+    font-size: small;
+}
+
+#horizontalLabels_2>span{
+    margin-left:20px;
+    margin-right:45px;
+    font-size: small;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="maindiv">
+    <form action="#">
+        <label for="fname" id="name-label">Name <sup>*</sup></label>
+        <input type="text" name="fname" placeholder="First Name" required>
+        <input type="text" name="fname" placeholder="Last Name" required>
+        <br>
+        <label for="eml">Email<sup>*</sup></label>
+        <input type="email" name="eml" required>
+        <br>
+
+        <label for="tab1">How satisfied are you with <sup>*</sup></label>
+        <div class="horizontalLabels" id="horizontalLabels_1">
+            <span>Very Unsatisfied</span>
+            <span>Unsatisfied</span>
+            <span>Neutral</span>
+            <span>Satisfied</span>
+            <span>Very Satisfied</span>
+        </div>
+            <div class="tab">
+                <div class="enquiry" id="purchase">
+                    <label for="puropt">Purchase</label>
+                    <input type="radio" name="puropt">
+                    <input type="radio" name="puropt">
+                    <input type="radio" name="puropt">
+                    <input type="radio" name="puropt">
+                    <input type="radio" name="puropt">
+                </div>
+
+                <div class="enquiry" id="service">
+                    <label for="serviceopt">Service</label>
+                    <input type="radio" name="serviceopt">
+                    <input type="radio" name="serviceopt">
+                    <input type="radio" name="serviceopt">
+                    <input type="radio" name="serviceopt">
+                    <input type="radio" name="serviceopt">
+                </div>
+                
+                <div class="enquiry" id="company">
+                    <label for="companyopt">Company Overall</label>
+                    <input type="radio" name="companyopt">
+                    <input type="radio" name="companyopt">
+                    <input type="radio" name="companyopt">
+                    <input type="radio" name="companyopt">
+                    <input type="radio" name="companyopt">
+                </div>
+            </div>
+        
+<br>
+        <label for="tab2">How likely are you to <sup>*</sup></label>
+        <div class="horizontalLabels" id="horizontalLabels_2">
+            <span>Very Unlikely</span>
+            <span>Unlikely</span>
+            <span>Neutral</span>
+            <span>Likely</span>
+            <span>Very Likely</span>
+        </div>
+            <div class="tab">
+                <div class="enquiry" id="buyagain">
+                    <label for="buyopt">Buy from us again</label>
+                    <input type="radio" name="buyopt">
+                    <input type="radio" name="buyopt">
+                    <input type="radio" name="buyopt">
+                    <input type="radio" name="buyopt">
+                    <input type="radio" name="buyopt">
+                </div>
+
+                <div class="enquiry" id="recommendProducts">
+                    <label for="recommendopt1">Recommend products</label>
+                    <input type="radio" name="recommendopt1">
+                    <input type="radio" name="recommendopt1">
+                    <input type="radio" name="recommendopt1">
+                    <input type="radio" name="recommendopt1">
+                    <input type="radio" name="recommendopt1">
+                </div>
+                
+                <div class="enquiry" id="recommendcompany">
+                    <label for="recommendopt2">Recomment company</label>
+                    <input type="radio" name="recommendopt2">
+                    <input type="radio" name="recommendopt2">
+                    <input type="radio" name="recommendopt2">
+                    <input type="radio" name="recommendopt2">
+                    <input type="radio" name="recommendopt2">
+                </div>
+            </div>
+        <br>
+        
+       <label for="addArguments">Additional arguments or suggestions</label>   
+       <textarea name="addArguments" id="addArguments" cols="100" rows="3"></textarea>  
+
+       <br>
+       
+       <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+    
+</body>
+</html>

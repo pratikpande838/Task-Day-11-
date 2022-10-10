@@ -1,0 +1,104 @@
+:root{
+    --radi:10px;
+    --padd:5px;
+    --marg:10px;
+}
+
+
+.container{
+    display:grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 100px 150px;
+    background-color: lightgrey;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color:whitesmoke;
+    grid-template-areas: 
+    "navbar navbar navbar navbar"
+    "sidebar searchbar searchbar searchbar"
+    "sidebar cont1 cont2 cont3"
+    "sidebar cont4 cont4 cont4";
+
+    text-align: center;
+    justify-content: center;
+    grid-gap: 0.5rem;
+    
+}
+
+nav{
+    background-color: lightslategray;
+    grid-area:navbar;
+    justify-content: center;
+}
+
+#sidebar{
+    background-color: grey;
+    grid-area:sidebar;
+    border-radius: var(--radi);
+    padding:var(--padd);
+    margin:var(--marg);
+}
+
+#searchbar{
+    background-color: grey; 
+    grid-area:searchbar;
+    text-align: start;
+    border-radius: var(--radi);
+    padding:var(--padd);
+    margin:var(--marg);  
+}
+#cont1{
+    background-color: grey;
+    grid-area:cont1;
+    border-radius: var(--radi);
+    padding:var(--padd);
+    margin:var(--marg);
+}
+#cont2{
+    background-color: grey;
+    grid-area:cont2;
+    border-radius: var(--radi);
+    padding:var(--padd);
+    margin:var(--marg);
+}
+#cont3{
+    background-color: grey;
+    grid-area:cont3;
+    border-radius: var(--radi);
+    padding:var(--padd);
+    margin:var(--marg);
+}
+
+#cont4{
+    background-color: grey;
+    grid-area:cont4;
+    border-radius: var(--radi);
+    padding:var(--padd);
+    margin:var(--marg);
+}
+
+
+@media screen and (max-width:550px){
+    .container{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 50px 80px 60px 60px 60px 80px;
+        background-color: lightgrey;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color:whitesmoke;
+        grid-template-areas: 
+        "navbar"
+        "searchbar"
+        "sidebar"
+        "cont1"
+        "cont2"
+        "cont3"
+        "cont4";
+    
+        text-align: center;
+        justify-content: center;
+        grid-gap: 0.2rem;
+        
+    }
+}
